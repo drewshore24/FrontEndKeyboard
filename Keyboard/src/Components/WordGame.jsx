@@ -7,7 +7,7 @@ const WordGame = ({ typedLetter, setTypedLetter, setSpecialKey }) => {
   // useStates
   const inputRef = useRef(null);
   const [strArray, setStrArr] = useState([]);
-  const [timer, setTimer] = useState(30);
+  const [timer, setTimer] = useState(10);
   const [timerStarted, setTimerStarted] = useState(false);
   const [correctChar, setCorrectChar] = useState(0);
   const [cpm, setCpm] = useState(0);
@@ -101,10 +101,10 @@ const WordGame = ({ typedLetter, setTypedLetter, setSpecialKey }) => {
     }
     if (!gameStarted && timer > 0) {
       return (
-        <span className="start-game-text">
+        <p className="start-game-text">
           Please click here to start the game. Once you start typing, the timer
           will start...
-        </span>
+        </p>
       );
     }
     if (gameStarted && timer === 0) {
@@ -128,11 +128,11 @@ const WordGame = ({ typedLetter, setTypedLetter, setSpecialKey }) => {
     }
     if(difficulty === "medium"){
         console.log('im here in medium')
-        SetParagraph("As the sunlight broke through the early morning sky, the town slowly came to life. Families gathered in the park, while the children laughed and played with their toys. The breeze carried the scent of fresh flowers and the sound of birds chirping in the trees. In the distance, the market began to stir with activity. Vendors arranged their fresh produce, calling out to the passersby to admire their goods. People stopped to chat with friends, sharing stories and making plans for the day. The town square was bustling with a warm, friendly atmosphere, as the sunshine brightened the mood. Some sat on benches, enjoying the calm moments, while others explored the different shops. The day moved at a relaxed pace, but the air was full of energy. By mid-afternoon, the hustle of the market had reached its peak. The warmth of the day was inviting, making it easy for people to stay outdoors. The beauty of the town was apparent in every moment, with a sense of peace that wrapped around everyone.")
+        SetParagraph("As the sunlight broke through the early morning sky, the town slowly came to life. Families gathered in the park, while the children laughed and played with their toys. The breeze carried the scent of fresh flowers and the sound of birds chirping in the trees. In the distance, the market began to stir with activity. Vendors arranged their fresh produce, calling out to the passersby to admire their goods. People stopped to chat with friends, sharing stories and making plans for the day. The town square was bustling with a warm, friendly atmosphere, as the sunshine brightened the mood.")
     }
     if(difficulty=== "hard"){
         console.log('im here in hard')
-        SetParagraph("In the quaint village, the morning began with a sense of urgency, as the townsfolk prepared for the busy day ahead. The horizon, still bathed in soft hues of pink and gold, gave a gentle glow to the narrow streets. As the vibrant sun climbed higher, the marketplace filled with the sounds of merchants calling out to passing customers. Vendors proudly displayed their goods, from exquisite pastries to colorful vegetables, each stall offering a unique aroma that blended into the lively air. A young woman, her mind buzzing with thoughts of the day’s tasks, moved purposefully through the crowds. She was searching for the perfect ingredients to prepare her evening meal, her eyes scanning the various displays with precision. The atmosphere was electric, yet the beauty of the moment was not lost on her. The aroma of freshly baked bread mixed with the fragrant scent of flowers from a nearby stall, creating a rich, sensory experience.")
+        SetParagraph("In the quaint village, the morning began with a sense of urgency, as the townsfolk prepared for the busy day ahead. The horizon, still bathed in soft hues of pink and gold, gave a gentle glow to the narrow streets. As the vibrant sun climbed higher, the marketplace filled with the sounds of merchants calling out to passing customers. Vendors proudly displayed their goods, from exquisite pastries to colorful vegetables, each stall offering a unique aroma that blended into the lively air. A young woman, her mind buzzing with thoughts of the day’s tasks, drifted through the crowds.")
     }
 }
 
@@ -141,7 +141,7 @@ const WordGame = ({ typedLetter, setTypedLetter, setSpecialKey }) => {
     setTypedLetter(null);
     setSpecialKey(null)
     setStrArr([]);
-    setTimer(30);
+    setTimer(10);
     setTimerStarted(false);
     setCorrectChar(0);
     setCpm(0);
@@ -176,12 +176,6 @@ const WordGame = ({ typedLetter, setTypedLetter, setSpecialKey }) => {
           <div className="text-field">{conditionalRender()}</div>
         </div>
       </div>
-      {/* <div className="result">
-        <p className="statistics time-r">Time Remaining: {timer} </p>
-        <p className="statistics accuracy">Accuracy: {accuracy}%</p>
-        <p className="statistics wpm">WPM: {wpm}</p>
-        <p className="statistics cpm">CPM: {cpm}</p>
-      </div> */}
       <button className="Refresh" onClick={refresh}>
         Refresh
       </button>

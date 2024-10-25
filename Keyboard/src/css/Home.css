@@ -1,6 +1,6 @@
 body{
-    background-color: #F5F5F5;
-    background: linear-gradient(to right, #F5F5F5, #F5F5F5); /* Pink to peach gradient */
+    background-color: #F8F8FF;
+    /* background: linear-gradient(to right, #F5F5F5, #F8F8FF); */
     margin: 0;
     padding: 0;
 }
@@ -17,5 +17,5 @@ h1{
     text-align: center;
     color: #FAF9F6;;
     margin: 0;
+    font-weight: bold;
 }
-
