@@ -1,5 +1,5 @@
 .container {
-    margin-top: 20px;
+    margin-top: 7px;
     box-sizing: border-box;
     background-color: #F8F8FF;
     display: flex;
@@ -135,7 +135,7 @@
   }
   
   .innerbackspace{
-    width: 182px;
+    width: 176px;
     height: 50px;
     margin-bottom: 5px;
     display: flex;
@@ -167,7 +167,7 @@
   }
   
   .innertab{
-    width: 78px;
+    width: 79px;
     height: 50px;
     margin-bottom: 5px;
     display: flex;
@@ -199,7 +199,7 @@
   }
   
   .innerslash{
-    width: 146px;
+    width: 143px;
     height: 50px;
     margin-bottom: 5px;
     display: flex;
@@ -261,7 +261,7 @@
   }
   
   .inner_enter_key{
-    width: 178px;
+    width: 175px;
     height: 50px;
     margin-bottom: 5px;
     display: flex;
@@ -352,7 +352,7 @@
   }
   
   .inner_shift_left{
-    width: 145px;
+    width: 141px;
     height: 50px;
     margin-bottom: 5px;
     padding-bottom: 2px;
@@ -383,7 +383,7 @@
   }
   
   .inner_shift_right{
-    width: 168px;
+    width: 165px;
     height: 50px;
     padding-bottom: 2px;
     margin-bottom: 4px;
