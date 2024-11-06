@@ -1,0 +1,15 @@
+.togglebutton{
+    height: 50px;
+    width: 50px;
+    background-color: #B0B0B0;
+    padding: 0;
+    border-radius: 60px;
+    border: 1px solid black;
+    margin-left: 1800px;
+}
+
+img{
+    background-color: #B0B0B0;
+    height: 30px;
+    width: 30px;
+}
